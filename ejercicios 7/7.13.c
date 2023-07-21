@@ -1,8 +1,4 @@
 #include <stdio.h>
-
-/* Calcula longitud.
-El programa calcula la longitud de la cadena sin utilizar la función strlen. */
-
 int cuenta(char *); /* Prototipo de función. */
 
 int main(void)
