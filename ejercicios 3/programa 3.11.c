@@ -1,10 +1,4 @@
 #include <stdio.h>
-
-/* Examen de admisión
-el programa, al recibir como datos una serie de calificaciones de un examen, obtiene el rango en que se encuentran estas 
-R1, R2, R3, R4 y R5: variables de tipo enteros.
-CAL: variables de tipo real */
-
 void main(void)
 {
   int R1 = 0, R2 = 0, R3 = 0, R4 = 0, R5 = 0;
