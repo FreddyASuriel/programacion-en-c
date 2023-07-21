@@ -1,6 +1,4 @@
 #include <stdio.h>
-/* Archivos con variables enteras y reales.
-El programa lee datos de alumnos almacenados en un archivo y escribe la ➥matrícula y el promedio de cada alumno. */
 void main(void)
 {
 int i, j, n, mat; float cal, pro; FILE *ar;
@@ -9,10 +7,6 @@ fscanf(ar, "%d", &n); for (i = 0; i < n; i++) {
 fscanf(ar, "%d", &mat); printf("%d\t", mat); pro = 0;
 for (j=0; j<5; j++)
 {
-/* Se lee el valor de n. */
-/* Se lee la matrícula de cada alumno. */
-/* Se leen las cinco calificaciones ➥del alumno. */
-/* Se escribe el promedio de cada ➥alumno. */
 fscanf(ar, "%f", &cal); pro += cal;
 }
 printf("\t %.2f ", pro / 5);
