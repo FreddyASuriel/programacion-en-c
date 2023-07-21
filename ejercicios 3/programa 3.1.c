@@ -1,10 +1,4 @@
 #include <stdio.h>
-
-/* nomina
-el programa al recibir los salarios de 15 profesores, obtiene el total de ka nomina de la universidad.
-I: variable de tipos enteros.
-SAL y NOM: variable de tipo entero. */
-
 void main(void)
 {
   int I;
