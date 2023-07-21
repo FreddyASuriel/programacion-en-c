@@ -1,9 +1,4 @@
 #include <stdio.h>
-
-/* suma positiva.
-  el programa, al recibir como datos N numero enteros, obttiene la suma de los enteros positivos.
-I, N, NUM, SUM: variables de tipo enteros. */
-
 void main(void)
 {
   int I, N, NUM, SUM;
