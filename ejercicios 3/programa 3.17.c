@@ -1,7 +1,4 @@
 #include <stdio.h>
-/* Números perfectos.
-El programa, al recibir como dato un número entero positivo como límite, obtiene los números perfectos que hay entre 1 y ese número, y además imprime cuántos nú- meros perfectos hay en el intervalo.
-I, J, NUM, SUM, C: variables de tipo entero. */
 void main(void)
 {
 int I, J, NUM, SUM, C = 0; 
