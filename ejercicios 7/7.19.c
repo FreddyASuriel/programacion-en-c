@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
-/* Cuenta palabras.
-El programa calcula el número de palabras que hay en la cadena de caracteres. */
-
-int cuentap(char *); /* Prototipo de función. */
+int cuentap(char *);
 
 int main(void)
 {
@@ -13,7 +9,7 @@ int main(void)
     char fra[50];
     printf("\nIngrese la línea de texto: ");
     fgets(fra, 50, stdin);
-    strcat(fra, " "); /* Se agrega un espacio en blanco al final de la cadena. */
+    strcat(fra, " ");
     i = cuentap(fra);
     printf("\nLa línea de texto tiene %d palabras", i);
     return 0;
@@ -21,15 +17,14 @@ int main(void)
 
 int cuentap(char *cad)
 {
-    /* La función cuenta el número de palabras que hay en la cadena de caracteres. */
     char *cad0 = " ";
     int i = 0;
-    cad0 = strstr(cad, " "); /* Se localiza el primer espacio en blanco en la cadena. */
+    cad0 = strstr(cad, " ");
     while (strcmp(cad, " "))
     {
         strcpy(cad, cad0);
         i++;
-        cad0 = strstr(cad + 1, " "); /* Se busca un espacio en blanco a partir de la siguiente posición. */
+        cad0 = strstr(cad + 1, " ");
     }
     return (i);
 }
