@@ -1,10 +1,4 @@
 #include <stdio.h>
-
-/* Fibonacci.
-El programa calcula y escribe los primeros 50 números de Fibonacci.
-
-I, PRI, SEG, SIG: variables de tipo entero. */
-
 void main(void)
 {
 int I, PRI = 0, SEG = 1, SIG;
