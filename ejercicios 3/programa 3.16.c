@@ -1,8 +1,4 @@
 #include <stdio.h>
-/* Calificaciones.
-El programa, al recibir un grupo de calificaciones de un alumno, obtiene el pro- medio de calificaciones de cada uno de ellos y, además, los alumnos con el mejor y peor promedio.
-I, MAT, MAMAT y MEMAT: variables de tipo entero.
-CAL, SUM, MAPRO, MEPRO y PRO: variables de tipo real.*/
 void main(void)
 {
 int I, MAT, MAMAT, MEMAT;
