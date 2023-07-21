@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int longitud(char *); /* Prototipo de función. */
+int longitud(char *);
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
     {
         printf("Ingrese la línea %d de texto. Máximo 50 caracteres: ", i + 1);
         fflush(stdin);
-        fgets(FRA[i], 50, stdin); /* Se lee la cadena de caracteres dentro del ciclo. */
+        fgets(FRA[i], 50, stdin);
     }
     printf("\n");
     for (i = 0; i < n; i++)
@@ -33,8 +33,6 @@ int main(void)
 }
 
 int longitud(char *cadena)
-/* Esta función calcula la longitud de la cadena. Es idéntica a la función
-➥cuenta del programa 7.13. */
 {
     int cue = 0;
     while (cadena[cue] != '\0')
