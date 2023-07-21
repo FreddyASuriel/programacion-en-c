@@ -1,9 +1,5 @@
 #include <stdio.h>
 #include <ctype.h>
-
-/* Cuenta letras minúsculas y mayúsculas.
-El programa, al recibir como dato una frase, determina el número de letras
-minúsculas y mayúsculas que existen en la frase. */
 int main(void)
 {
     char cad[51]; //agregamos una posición adicional para el caracter nulo de final de cadena
