@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void intercambia(char FRA[][30], int); /* Prototipo de función. */
+void intercambia(char FRA[][30], int);
 
 int main(void)
 {
@@ -26,7 +26,6 @@ int main(void)
 }
 
 void intercambia(char FRA[][30], int n)
-/* Esta función intercambia las filas del arreglo. */
 {
     int i, j;
     j = n - 1;
