@@ -24,11 +24,7 @@ int main(void)
     fgets(buffer, 20, stdin);
     strcpy(cad2, buffer);
     puts(cad2);
-
-    // Intentar asignar "Guatemala" a cad2[10] genera un error de compilación
-    // porque cad2 solo tiene capacidad para 20 caracteres (del 0 al 19).
-    // Si se quisiera modificar la cadena en la posición 10, se podría hacer
-    // de la siguiente manera:
+    
     cad2[10] = 'G';
     cad2[11] = 'u';
     cad2[12] = 'a';
