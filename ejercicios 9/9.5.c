@@ -1,5 +1,4 @@
 #include <stdio.h>
-/* Archivos con variables enteras y reales.El programa almacena datos de un grupo de alumnos en un archivo. */
 void main(void)
 {
   int i, j, n, mat;
@@ -7,7 +6,6 @@ void main(void)
   FILE *ar;
   printf("\nIngrese el número de alumnos: ");
   scanf("%d", &n);
-  /* Se asume que el valor que ingresa el usuario está comprendido entre 1 y 35. */
   if ((ar = fopen("arc8.txt", "w")) != NULL)
     {
 
