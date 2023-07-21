@@ -9,7 +9,6 @@ int main(void)
     putchar(p1);
     printf("\n");
 
-    // Limpiar el búfer de entrada
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 
@@ -22,7 +21,6 @@ int main(void)
     putchar(p2);
     printf("\n");
 
-    // Limpiar el búfer de entrada
     while ((c = getchar()) != '\n' && c != EOF);
 
     return 0;
