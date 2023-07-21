@@ -1,8 +1,4 @@
 #include <stdio.h>
-
-/* Verifica.
-El programa, al recibir como datos una cadena de caracteres y una posición específica en la cadena, determina si el caracter correspondiente es una letra
-minúscula. */
 int main(void)
 {
     char p, cad[51];
