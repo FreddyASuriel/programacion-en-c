@@ -9,7 +9,7 @@ struct alumno {
     char direccion[20];
 };
 
-int lectura(struct alumno *); // Function prototype.
+int lectura(struct alumno *);
 
 int main(void) {
     struct alumno a0 = {120, "Maria", "Contabilidad", 8.9, "Queretaro"};
