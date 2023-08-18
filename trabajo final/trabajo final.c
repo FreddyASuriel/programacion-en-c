@@ -24,24 +24,29 @@ int main() {
 
     // Realizar la evaluación de respuestas y determinar el procedimiento o medicamento
     if (strcmp(respuestas[2], "dolor de pecho\n") == 0) {
-        strcpy(procedimiento, "Llamar al equipo de emergencia y administrar aspirina.");
+        // Agregar más preguntas para el dolor de pecho
+        printf("6. ¿Se irradia el dolor hacia el brazo izquierdo? ");
+        fgets(respuestas[5], sizeof(respuestas[5]), stdin);
+
+        if (strcmp(respuestas[5], "sí\n") == 0) {
+            strcpy(procedimiento, "Llamar al equipo de emergencia y administrar aspirina.");
+        } else {
+            strcpy(procedimiento, "Consultar con el médico para una evaluación más precisa.");
+        }
     } else if (strcmp(respuestas[2], "fiebre alta\n") == 0) {
-        strcpy(procedimiento, "Administrar acetaminofén y descansar en cama.");
-    } else if (strcmp(respuestas[2], "dolor de cabeza\n") == 0) {
-        strcpy(procedimiento, "Tomar ibuprofeno y descansar en un lugar tranquilo.");
-    } else if (strcmp(respuestas[2], "dificultad para respirar\n") == 0 && strcmp(respuestas[3], "sí\n") == 0) {
-        strcpy(procedimiento, "Administrar inhalador de rescate y buscar atención médica de inmediato.");
-    } else if (strcmp(respuestas[2], "dolor abdominal\n") == 0 && strcmp(respuestas[4], "sí\n") == 0) {
-        strcpy(procedimiento, "Evitar alimentos sólidos y tomar antiácidos para el alivio temporal.");
-    } else if (strcmp(respuestas[2], "dolor de garganta\n") == 0 && strcmp(respuestas[3], "no\n") == 0) {
-        strcpy(procedimiento, "Tomar líquidos calientes y descansar la voz.");
-    } else if (strcmp(respuestas[2], "mareos\n") == 0 && strcmp(respuestas[1], "60\n") >= 0) {
-        strcpy(procedimiento, "Buscar atención médica para una evaluación completa.");
-    } else if (strcmp(respuestas[2], "sangrado\n") == 0 && strcmp(respuestas[3], "sí\n") == 0) {
-        strcpy(procedimiento, "Aplicar presión directa y buscar atención médica de inmediato.");
-    } else if (strcmp(respuestas[2], "vómitos\n") == 0 && strcmp(respuestas[4], "sí\n") == 0) {
-        strcpy(procedimiento, "Mantenerse hidratado y evitar alimentos sólidos.");
-    } else {
+        // Agregar más preguntas para la fiebre alta
+        printf("6. ¿La fiebre ha durado más de 3 días? ");
+        fgets(respuestas[5], sizeof(respuestas[5]), stdin);
+
+        if (strcmp(respuestas[5], "sí\n") == 0) {
+            strcpy(procedimiento, "Administrar acetaminofén y descansar en cama.");
+        } else {
+            strcpy(procedimiento, "Consultar con el médico para una evaluación más precisa.");
+        }
+    }
+    // Repetir el patrón para cada enfermedad...
+
+    else {
         strcpy(procedimiento, "Consultar con el médico para una evaluación más precisa.");
     }
 
