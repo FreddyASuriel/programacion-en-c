@@ -33,6 +33,14 @@ int main() {
         strcpy(procedimiento, "Administrar inhalador de rescate y buscar atención médica de inmediato.");
     } else if (strcmp(respuestas[2], "dolor abdominal\n") == 0 && strcmp(respuestas[4], "sí\n") == 0) {
         strcpy(procedimiento, "Evitar alimentos sólidos y tomar antiácidos para el alivio temporal.");
+    } else if (strcmp(respuestas[2], "dolor de garganta\n") == 0 && strcmp(respuestas[3], "no\n") == 0) {
+        strcpy(procedimiento, "Tomar líquidos calientes y descansar la voz.");
+    } else if (strcmp(respuestas[2], "mareos\n") == 0 && strcmp(respuestas[1], "60\n") >= 0) {
+        strcpy(procedimiento, "Buscar atención médica para una evaluación completa.");
+    } else if (strcmp(respuestas[2], "sangrado\n") == 0 && strcmp(respuestas[3], "sí\n") == 0) {
+        strcpy(procedimiento, "Aplicar presión directa y buscar atención médica de inmediato.");
+    } else if (strcmp(respuestas[2], "vómitos\n") == 0 && strcmp(respuestas[4], "sí\n") == 0) {
+        strcpy(procedimiento, "Mantenerse hidratado y evitar alimentos sólidos.");
     } else {
         strcpy(procedimiento, "Consultar con el médico para una evaluación más precisa.");
     }
